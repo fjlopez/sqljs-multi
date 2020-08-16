@@ -3,12 +3,12 @@ jdk:
   - openjdk8
 cache:
   directories:
-    - $HOME/build/js/node_modules
-    - $HOME/build/js/packages_imported
+    - ./build/js/node_modules
+    - ./build/js/packages_imported
 install:
-  - $HOME/gradlew assemble
+  - ./gradlew assemble
 script:
-  - $HOME/gradlew jsBrowserDistribution
+  - ./gradlew jsBrowserDistribution
 deploy:
   provider: pages
   skip_cleanup: true
