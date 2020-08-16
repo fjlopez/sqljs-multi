@@ -48,7 +48,7 @@ class App : RComponent<RProps, AppState>() {
 fun main() {
     js("require('codemirror/lib/codemirror.css');")
     js("require('codemirror/mode/sql/sql');")
-    js("require('styles.css');")
+    js("require('styles.module.css');")
     render(document.getElementById("root")) {
         child(App::class) {}
     }
